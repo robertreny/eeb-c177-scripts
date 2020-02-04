@@ -5,4 +5,4 @@
 # replace delimter ; with a space
 # sort by column 6 -k numerically -n in reverse -r
 # To run automatically from any prompt need to change permissions. r-- indicates others can only read the file and not execute it. Need to change permissions
-tail -n +2 $1 | cut -d ";" -f 2-6| tr ';' ' '| sort -r -n -k 6 > $2
+tail -n +2 $1 | cut -d $2 -f 2-6| tr ';' ' '| sort -r -n -k 6 > $3
